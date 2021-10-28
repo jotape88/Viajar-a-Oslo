@@ -1,0 +1,556 @@
+/* RESETEO DEL NAVEGADOR */
+*{border:0; padding:0; margin: 0;} 
+
+/* GENERAL */
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    margin: 50px auto;  
+}
+
+p{
+    text-align: justify;
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    width: 380px;
+}
+
+h2{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 30px;
+    width: 400px;
+    height: 48px;
+    border-left: 8px solid rgb(15, 24, 109);
+    /* Todos los gradient los generé yo manualmente en: https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(181,198,221,0.19091386554621848) 46%, rgba(123,129,200,0.18531162464985995) 80%);
+    text-indent: 16px;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);  /* Extraido de:  https://www.codesdope.com/blog/article/25-creative-css3-text-shadow-effects-you-cant-miss/*/ 
+}
+
+abbr {
+    text-decoration: none;
+    font-style: italic; 
+    color: #016e92;
+}
+abbr:hover{
+    opacity: 0.8;
+    /* Con esto, ajustamos el brillo de el elemento cuando hacemos hover */
+    filter: brightness(1.5);
+}
+
+figure img{
+    border-radius: 25px;
+}
+article img  {
+    border-radius: 8px;
+}
+
+.secciones{
+    width: 1200px;
+}
+
+#anclaVolver{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Con esto añadimos un efecto de transicion suave al hacer hover sobre los elementos seleccionados */
+.titulosActividades, #cabecera nav ul li a, #seccionTop10YFam img, abbr{
+    transition: .3s  ease .1s;
+}
+
+/* HEADER CON LOGO */
+#cabecera{
+    background-image: url("../img/header.jpg");
+    background-color: rgba(95, 204, 204, 0.774);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    height: 540px;
+    /* Añade sombra alrededor de toda la seccion */
+    box-shadow: 1px 1px 10px rgb(119, 119, 119);
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    text-align: center; 
+    justify-content: center;   
+}
+
+#cabecera ul li {
+    padding: 2px;
+    width: 150px;
+    margin-bottom: 1px;   
+    list-style: none;
+    margin-left: 20px;
+}
+
+#cabecera nav ul li a {
+    display: block; 
+    background-color: rgb(23, 95, 179) ;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 25px;
+    /* Añade sombra para los botones del menu */
+    box-shadow: 8px 8px 25px #777;
+    border-bottom: 3px solid rgb(23, 95, 179); 
+    /* Añadimos difuminado */
+    filter: blur(0.5px);
+}
+
+#cabecera nav ul li a:hover {
+    background-color: rgba(49, 54, 54, 0.664);
+    border-bottom: 3px solid rgb(73, 72, 72); 
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    margin-top: 100px;
+    font-size: 65px;
+    text-shadow: 3px 2px rgb(0, 0, 0);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    color: rgba(255, 255, 255, 0.836);
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    filter: blur(0.6px);
+}
+
+/* 1er SECCIÓN (PARRAFO Y LISTA ORDENADA) - INFORMACIÓN */
+#seccionInformacion{
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Rubik', sans-serif;
+}
+
+#seccionInformacion h2{
+    width: 372px;
+}
+
+#seccionInformacion p{
+    margin-top: 10px;
+}
+
+#seccionInformacion h3{
+    margin: 10px 0 17px 28px;
+    font-size: 20px;
+}
+
+#seccionInformacion ol{
+    width: 352px;
+    margin-left: 28px;
+    font-size: 17px;
+    list-style-position: inside;
+}
+#seccionInformacion li{
+    margin-top: 2px;
+}
+
+/* 2da SECCIÓN (TRES ARTICULOS Y TITULOS H3) - ACTIVIDADES ACERCA DE QUÉ HACER EN OSLO */
+#seccionQueHacer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    font-family: 'Rubik', sans-serif;
+    justify-content: space-between; 
+}
+
+#seccionQueHacer h2:nth-child(1){
+    width: 1192px;
+    margin-bottom: 30px;
+}
+
+#seccionQueHacer article img{
+    width: 380px;
+    height: 250px;
+    box-shadow: 1px 2px 25px #777;
+}
+
+#seccionQueHacer p{
+    margin-top: -20px;
+    word-spacing: 5px;
+}
+
+.titulosActividades{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+    font-size: 20px;
+    background-color: darkcyan;
+    opacity: 0.7;
+    color: antiquewhite;
+    text-align: left;
+    text-indent: 20px;
+    word-spacing: 4px;
+    width: 280px;
+    height: 35px;
+    border-radius: 0 10px 10px 0;
+}
+.titulosActividades:hover{
+    color: white;
+    opacity: 0.9;
+}
+
+/* 3ra SECCIÓN (GALERÍA CON FIGURES) - OSLO EN FOTOS */
+#seccionGaleria{
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    justify-content: space-between; 
+    grid-row-gap: 24px;
+     
+}
+
+#seccionGaleria figure img{ 
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 10px 25px #777;
+}
+
+#seccionGaleria h2:nth-of-type(1){
+    width: 1192px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#seccionGaleria figure:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 2/4
+}
+
+#seccionGaleria figure:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 2/3; 
+}
+#seccionGaleria figure:nth-of-type(3){
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#seccionGaleria figure:nth-of-type(4){
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+/* 4ta SECCIÓN (PRIMER FORMULARIO) - NOVEDADES CON BOTON QUIERO! */
+#seccionFormularioNovedades{
+    display: grid; 
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,73,121,1) 35%, rgba(6,120,166,1) 57%, rgba(0,212,255,1) 100%);
+    grid-template-columns: repeat(2, 575px);
+    grid-column-gap: 50px;; 
+    justify-content: center; 
+    height: 80px;
+    font-family: 'Manrope', sans-serif;  
+}
+
+#seccionFormularioNovedades h3{
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    text-shadow: 2px 2px rgb(0, 0, 0); 
+    word-spacing: 2px; 
+    letter-spacing: 3px;
+    font-size: 20px;
+    height: 80px;
+}
+
+#seccionFormularioNovedades form{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+}
+
+/* Input de "Ingrese su e-mail" */
+#seccionFormularioNovedades input[type="email"]{
+    width: 320px;
+    height: 38px;
+    margin-right: 10px;
+    text-indent: 17px;
+    font-size: 17px;
+    box-shadow: 1px 1px 25px rgba(255, 255, 255, 0.192);
+    color: antiquewhite;
+    background-color: rgba(29, 114, 212, 0.315); 
+    border: 1px solid rgba(255, 255, 255, 0.555);
+}
+#seccionFormularioNovedades input[type="email"]:hover{
+    background-color: rgba(112, 142, 177, 0.315);
+}
+#seccionFormularioNovedades input[type="email"]::placeholder{
+    color: white;
+}
+
+/* Boton de "Quiero" */
+#seccionFormularioNovedades input[type="submit"]{
+    width: 140px;
+    height: 38px;
+    background-color: #02698b; 
+    border-radius: 12px;
+    box-shadow: 1px 1px 25px rgba(255, 255, 255, 0.404);
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+#seccionFormularioNovedades input[type="submit"]:focus{
+    background-color: rgba(4, 76, 100, 0.836)
+}
+
+/* 5ta SECCIÓN (TABLA Y LISTA DESORDENADA) - TOP 10 ATRACCIONES y LISTA FAMOSOS NACIDOS EN OSLO */
+#seccionTop10YFam{ 
+    display: grid;
+    grid-template-columns: repeat(2, 575px);
+    grid-column-gap: 50px;; 
+    font-family: 'Roboto', sans-serif;
+    font-size:17px;
+    margin-bottom: 95px;
+    /* Hardcodeando el height evitamos que se mueva el footer cuando hacemos hover por los famosos */
+    height: 400px;  
+}
+
+#seccionTop10YFam h2{
+    margin-bottom: 40px;
+    width: 567px;
+}
+
+table{
+    font-family: 'Rubik', sans-serif;
+    text-indent: 17px;
+    margin-top: 25px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 1px 10px 25px #777;
+    /* Para el efecto Parallax */
+    background-image: url("../img/parallax.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+table tr{
+    height: 55px; 
+    background-color: rgba(148, 200, 221, 0.479);
+}
+table tr:nth-child(even){
+    background-color: rgba(55, 106, 182, 0.356);
+}
+
+table td{
+    border-top: 8px solid white; 
+}
+table td:nth-child(1){
+    text-align: center;
+    text-indent: 0;
+    font-weight: bolder;
+    border-right: 8px solid white;
+}
+table td:nth-child(3){
+    border-left: 8px solid white;
+    text-align: center;
+    text-indent: 0;
+    word-spacing: 4px;
+}
+
+table th{
+    background-color: rgba(86, 91, 105, 0.452);
+    color: white;
+    text-align: left;
+    border-bottom: 8px solid white;
+}
+table th:nth-child(1){
+    width: 55px;
+    text-align: center;
+    text-indent: 0;
+    border-right: 8px solid white;
+}
+table th:nth-child(2){
+    border-right: 8px solid white;
+    border-left: 8px solid white; 
+    width: 250px;
+}
+table th:nth-child(3){
+    text-align: center;
+    border-left: 8px solid white;    
+    width: 100px;
+    text-indent: 0;
+}
+
+#seccionTop10YFam ul{
+    margin-top: 25px;
+    margin-left: 25px;
+    list-style: none;
+}
+
+#seccionTop10YFam ul li{
+    display: flex;
+    margin-bottom: 25px;
+}
+#seccionTop10YFam ul li p{
+    vertical-align: 20px;
+    margin: 10px 0 0 17px;
+}
+#seccionTop10YFam ul li p span{
+    display: inline-block;
+    font-weight: 900;
+    width: 400px;
+    margin-bottom: 12px;
+}
+#seccionTop10YFam img{
+    height: 80px;
+    width: 80px;
+    box-shadow: 2px 4px 7px #777;
+    border-radius: 50%;
+}
+#seccionTop10YFam img:hover{
+    height: 100px;
+    width: 100px;
+    box-shadow: 4px 4px 7px rgba(189, 3, 3, 0.342);
+}
+
+/* 6ta SECCIÓN (SEGUNDO FORMULARIO) - QUIERO VIAJAR A OSLO CON TEXTAREA */
+#seccionFormularioQuieroViajar{
+    display: grid;
+    background-image: url("../img/pattern.jpg");
+    font-family: 'Manrope', sans-serif;
+    background-color: rgba(23, 112, 128, 0.815); 
+    background-size: cover;
+    grid-template-columns: 550px;
+    font-size: 17px;
+    justify-content: center; 
+    margin: 0;
+}
+
+/* Titulo "Quiero viajar a OSLO" */
+#seccionFormularioQuieroViajar h2 {
+    color: rgb(179, 237, 245);
+    text-shadow: 2px 2px #444;
+    border: none;  
+    background: none;
+    margin: 20px 0;
+    letter-spacing: 7px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Formulario general */
+#seccionFormularioQuieroViajar form {
+    margin: 5px auto 25px auto;  
+}
+
+/* Todos los inputs */
+#seccionFormularioQuieroViajar input{
+    display: block; 
+    margin-bottom: 7px;
+    border: 1px solid #444;
+    text-indent: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(65, 62, 62, 0.404);
+    width: 370px;
+    height: 35px;
+}
+
+/* Todos los labels */
+#seccionFormularioQuieroViajar label{
+    margin-left: 9px;
+    text-shadow: 1px 1px #444;
+    letter-spacing: 2px;
+}
+
+textArea{
+    display: block;
+    resize: none;
+    width: 370px;
+    border: 1px solid #444;
+    text-indent: 5px;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px rgba(65, 62, 62, 0.404);
+    border-radius: 5px;
+}
+
+/* Checkbox */
+#seccionFormularioQuieroViajar input[type="checkbox"]{
+    margin-top: 2px;
+    float: left;
+    width: auto;
+    box-shadow: none;
+
+}
+
+/* Label para la checkbox */
+#seccionFormularioQuieroViajar label[for="aceptoCondiciones"]{
+    display: inline-block;
+    width: 130px;
+    text-shadow: 1px 1px #444;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 0;
+    word-spacing: 3px;
+}
+
+/* El boton ENVIAR */
+#seccionFormularioQuieroViajar input[type="submit"]{
+    width: 150px;
+    height: 35px;   
+    background-color: #45449ed7; 
+    color: white;
+    margin-top: 10px;
+    float: right;
+    border-radius: 8px;
+    border: none;
+    text-indent: 0;
+} 
+#seccionFormularioQuieroViajar input[type="submit"]:focus{
+    background-color: #2e2c8bda; 
+}
+
+/* (FOOTER) - SPRITES DE REDES SOCIALES */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 34%, rgba(9, 153, 203, 0.655) 100%);
+    height: 130px;
+}
+
+footer nav ul li{
+    background-image: url("../img/spritesRedes.png");
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    margin-left: 12px;
+}
+
+footer nav ul li:nth-child(1){
+    background-position: 0 0;
+}
+footer nav ul li:nth-child(1):hover{
+    background-position: 0 -50px;
+}
+
+footer nav ul li:nth-child(2){
+    background-position: -50px 0;
+}
+footer nav ul li:nth-child(2):hover{
+    background-position: -50px -50px;
+}
+
+footer nav ul li:nth-child(3){
+    background-position: -100px 0;
+}
+footer nav ul li:nth-child(3):hover{
+    background-position: -100px -50px;
+}
