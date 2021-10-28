@@ -430,6 +430,8 @@ table th:nth-child(3){
     font-size: 17px;
     justify-content: center; 
     margin: 0;
+    border-bottom: 1px solid #02526d;
+    box-shadow: 2px 2px 25px rgb(119, 119, 119);
 }
 
 /* Titulo "Quiero viajar a OSLO" */
@@ -487,7 +489,6 @@ textArea{
     float: left;
     width: auto;
     box-shadow: none;
-
 }
 
 /* Label para la checkbox */
